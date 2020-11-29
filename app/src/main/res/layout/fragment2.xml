@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".MainActivity"
+        >
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:type="one_day_picker"
+            app:headerColor="@color/Blue"
+            app:selectionColor="@color/Blue"
+            app:todayLabelColor="@color/Blue"
+            app:eventsEnabled="true" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5sp">
+
+            <EditText
+                android:id="@+id/edtDairy"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/LightBlue"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="7sp"
+                android:text=""
+                android:hint="일정을 입력해주세요."
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:background="@color/LightBlue"
+                android:text="저장"
+                android:textColor="@color/DarkGray"/>
+
+
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="159dp"
+                android:background="@color/LightBlue"
+                android:text="알람"
+                android:textColor="@color/DarkGray" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:background="@color/LightBlue"
+                android:text="삭제"
+                android:textColor="@color/DarkGray" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

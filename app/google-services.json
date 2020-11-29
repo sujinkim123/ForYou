@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "55080710183",
+    "firebase_url": "https://foryou-3c7c7.firebaseio.com",
+    "project_id": "foryou-3c7c7",
+    "storage_bucket": "foryou-3c7c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55080710183:android:449aac09ff77116b1a1e02",
+        "android_client_info": {
+          "package_name": "org.techtown.foryou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55080710183-ka835hkgq9001rdb1cea5si3al2u0t3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.foryou",
+            "certificate_hash": "031d3ae1017a050735eeb2820201d3286e0e60b9"
+          }
+        },
+        {
+          "client_id": "55080710183-dormedecdufma2hccv1r2k52hq4ah498.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXIWv2NNXVAcxXGjTfFFfRn-IR9wN-AKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55080710183-dormedecdufma2hccv1r2k52hq4ah498.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

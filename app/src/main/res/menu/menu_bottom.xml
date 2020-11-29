@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        app:showAsAction="always"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:title="홈"
+        />
+    <item
+        android:id="@+id/tab2"
+        app:showAsAction="always"
+        android:icon="@drawable/plan"
+        android:enabled="true"
+        android:title="계획"
+        />
+    <item
+        android:id="@+id/tab3"
+        app:showAsAction="always"
+        android:icon="@drawable/review"
+        android:enabled="true"
+        android:title="리뷰"
+        />
+    <item
+        android:id="@+id/tab4"
+        app:showAsAction="always"
+        android:icon="@drawable/site"
+        android:enabled="true"
+        android:title="사이트"
+        />
+
+
+</menu>

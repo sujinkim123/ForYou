@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Time"
+            android:textColor="@color/Pink"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.172"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <ImageButton
+            android:id="@+id/pkbubble"
+            android:layout_width="284dp"
+            android:layout_height="157dp"
+            android:layout_gravity="bottom"
+            android:background="#00ffffff"
+            android:gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/pkbubble"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.151" />
+
+        <ImageButton
+            android:id="@+id/bluebubble"
+            android:layout_width="284dp"
+            android:layout_height="157dp"
+            android:layout_gravity="bottom"
+            android:background="#00ffffff"
+            android:gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/bluebubble"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.524" />
+
+        <Chronometer
+            android:id="@+id/timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@color/Pink"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/pkbubble"
+            app:layout_constraintEnd_toEndOf="@+id/pkbubble"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/pkbubble"
+            app:layout_constraintTop_toTopOf="@+id/pkbubble"
+            app:layout_constraintVertical_bias="0.678" />
+
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/reset"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintHorizontal_bias="0.845"
+            app:layout_constraintStart_toStartOf="@+id/bluebubble"
+            app:layout_constraintTop_toTopOf="@+id/bluebubble"
+            app:layout_constraintVertical_bias="0.294" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:text="초기화"
+            android:textColor="@color/DarkBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintTop_toBottomOf="@+id/reset"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/bluebubble"
+            app:layout_constraintTop_toTopOf="@+id/bluebubble"
+            app:layout_constraintVertical_bias="0.3" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="115dp"
+            android:text="일시정지"
+            android:textColor="@color/DarkBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintTop_toBottomOf="@+id/reset"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/start"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/start"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="@+id/bluebubble"
+            app:layout_constraintTop_toTopOf="@+id/bluebubble"
+            app:layout_constraintVertical_bias="0.3" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="220dp"
+            android:text="시작"
+            android:textColor="@color/DarkBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/bluebubble"
+            app:layout_constraintEnd_toEndOf="@+id/bluebubble"
+            app:layout_constraintTop_toBottomOf="@+id/reset"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stopwatch"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.832"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:src="@drawable/sound"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="백색소음"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.89"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/장작소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:background="@color/Blue"
+            android:text="장작소리"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.798"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/빗소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:text="빗소리"
+            android:background="@color/Blue"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.798"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/귀뚜라미소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:background="@color/Blue"
+            android:text="귀뚜라미 소리"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.862"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.798"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/바람소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:background="@color/Blue"
+            android:text="바람소리"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/파도소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:background="@color/Blue"
+            android:text="파도소리"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/연필소리"
+            android:layout_width="83dp"
+            android:layout_height="52dp"
+            android:background="@color/Blue"
+            android:text="연필소리"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.862"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
